@@ -3,21 +3,20 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 487844345581fe741a53ab05662b839a, type: 3}
+  m_Script: {fileID: 11500000, guid: 454270ba86f08ae4fab2ebf16b834170, type: 3}
   m_Name: BasicWave Enemy
   m_EditorClassIdentifier: 
-  attackType: 0
   actorName: enemy_wave
+  attackType: 0
   description: Typically in groups.
-  score: 200
   health: 1
   speed: -50
   hitPower: 1
-  actor: {fileID: 1491531622878281246, guid: c42e9fba8ddc24741ae270458a511259, type: 3}
+  actor: {fileID: 1642634873614178, guid: 910ce12a3ff96694398bc18221ea3c9e, type: 2}
   actorsBullets: {fileID: 0}
+  score: 200

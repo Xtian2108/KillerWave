@@ -1,19 +1,16 @@
-using UnityEngine;
+﻿using UnityEngine; 
+[CreateAssetMenu(fileName = "Create Actor", menuName = "Create Actor")]
+public class SOActorModel : ScriptableObject 
 
-[CreateAssetMenu(fileName = "SOActorModel", menuName = "KillerWave/SOActorModel", order = 0)]
-public class SOActorModel : ScriptableObject
-{
-    public enum AttackType
-    {
-        Wave, Player, Flee, Bullet
-    }
-    public AttackType attackType;
+{ 
     public string actorName;
-    public string description;
-    public int score;
+    public AttackType attackType;
+	public enum AttackType { wave, player, bullet }
+	public string description;
     public int health;
     public int speed;
     public int hitPower;
     public GameObject actor;
     public GameObject actorsBullets;
+	public int score;
 }

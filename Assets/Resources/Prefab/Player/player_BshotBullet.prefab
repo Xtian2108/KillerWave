@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23060671561776108}
   - component: {fileID: 54155686407428186}
   - component: {fileID: 136635000644151722}
+  - component: {fileID: 114317378700279168}
   m_Layer: 0
   m_Name: player_BshotBullet
   m_TagString: Player
@@ -57,7 +58,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 87e8c7347549efd4a9e4c9de9f41e8a3, type: 2}
+  - {fileID: 2100000, guid: 77adb7b3d9eb3f8408e5a7125cecdd47, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -83,7 +84,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1218136449366864}
-  m_Mesh: {fileID: 4300000, guid: 818411d1e6fe2554aa0605e9c53fd8ef, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 740bf511cda276a44a920019d7051ac7, type: 3}
 --- !u!54 &54155686407428186
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -99,6 +100,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114317378700279168
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1218136449366864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c7eabb3354ce4398175c4728593ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletModel: {fileID: 11400000, guid: 2202aafa3c405bb4f8dde0694b28c99d, type: 2}
 --- !u!136 &136635000644151722
 CapsuleCollider:
   m_ObjectHideFlags: 1

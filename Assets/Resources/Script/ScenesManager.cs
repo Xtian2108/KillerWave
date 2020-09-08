@@ -1,34 +1,33 @@
-﻿using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine.SceneManagement;
+using UnityEngine;
 
 public class ScenesManager : MonoBehaviour
 {
-    Scenes scenes;
-    public enum Scenes
-    {
-        bootUp,
-        title,
-        shop,
-        level1,
-        level2,
-        level3,
-        gameOver
-    }
-
-
+  Scenes scenes;
+  public enum Scenes
+  {
+    bootUp,
+    title,
+    shop,
+    level1,
+    level2,
+    level3,
+    gameover
+  }
+  
     public void ResetScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
+  {
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+  }
+  
     public void GameOver()
-    {
-        SceneManager.LoadScene("gameOver");
-        Debug.Log("ENDSCORE: " + GameManager.Instance.GetComponent<ScoreManager>().PlayersScore);
-    }
-
+  {
+	Debug.Log("ENDSCORE:" + GameManager.Instance.GetComponent<ScoreManager>().PlayersScore);
+    SceneManager.LoadScene("gameOver");
+  }
+  
     public void BeginGame()
-    {
-        SceneManager.LoadScene("testLevel");
-    }
-}
+  {
+    SceneManager.LoadScene("testLevel");
+  }
+  }

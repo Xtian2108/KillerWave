@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 487844345581fe741a53ab05662b839a, type: 3}
+  m_Name: BasicWave Enemy
+  m_EditorClassIdentifier: 
+  attackType: 0
+  actorName: enemy_wave
+  description: Typically in groups.
+  score: 200
+  health: 1
+  speed: -50
+  hitPower: 1
+  actor: {fileID: 1491531622878281246, guid: c42e9fba8ddc24741ae270458a511259, type: 3}
+  actorsBullets: {fileID: 0}

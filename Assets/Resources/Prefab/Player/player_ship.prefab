@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 33888832082347784}
   - component: {fileID: 54451580653863954}
   - component: {fileID: 135099253101520176}
+  - component: {fileID: 114114973926307662}
   m_Layer: 8
   m_Name: player_ship
   m_TagString: Player
@@ -197,13 +198,24 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114114973926307662
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1236211753169294}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3a19c4f67d8aef45b663cfabd8fa974, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114285643502322470
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1236211753169294}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36b5e53311454904e94ea1e148674949, type: 3}
   m_Name: 

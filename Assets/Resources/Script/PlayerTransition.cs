@@ -3,29 +3,29 @@ using System.Collections;
 
 public class PlayerTransition : MonoBehaviour 
 {
-    Vector3 transitionToEnd = new Vector3(-100,0,0);
-    Vector3 transitionToCompleteGame = new Vector3(7000,0,0);
+	Vector3 transitionToEnd = new Vector3(-100,0,0);
+    Vector3 transitionToComplete = new Vector3(7000,0,0);
     Vector3 readyPos = new Vector3(900,0,0);
     Vector3 startPos;
 	
 	float distCovered;
 	float journeyLength;
 	
-    bool levelStarted = true;
-    bool speedOff = false;
-    bool levelEnds = false;
+	bool levelStarted = true;
+	bool speedOff = false;
+	bool levelEnds = false;
     bool gameCompleted = false;
 
-    public bool LevelEnds
-    {
-        get {return levelEnds;}
-        set {levelEnds = value;}
-    }
     public bool GameCompleted
     {
         get {return gameCompleted;}
         set {gameCompleted = value;}
     }
+	public bool LevelEnds
+	{
+		get {return levelEnds;}
+		set {levelEnds = value;}
+	}
 	
 	void Start()
     {
@@ -53,15 +53,14 @@ public class PlayerTransition : MonoBehaviour
             Distance();
             StartCoroutine(PlayerMovement(transitionToEnd,200));
         }
-		
         if (gameCompleted)
         {
             GetComponent<Player>().enabled = false;
             GetComponent<SphereCollider>().enabled = false;
-            StartCoroutine(PlayerMovement(transitionToCompleteGame,200));
+            StartCoroutine(PlayerMovement(transitionToComplete,200));
         }
 		
-        if (speedOff)
+		if (speedOff)
 		{
 			Invoke("SpeedOff",1f);
 		}

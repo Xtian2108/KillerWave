@@ -5,13 +5,14 @@ public class TitleComponent : MonoBehaviour
 {
   void Update()
   {
-    if (Input.GetMouseButtonUp(0))
+    if (Input.GetButtonDown("Fire1"))
     {
       SceneManager.LoadScene("shop");
     }
   }
-   void Start()
+  void Start() 
   {
-    GameManager.playerLives = 3;
+    if (GameManager.playerLives <= 2)
+        GameManager.playerLives = 3;
   }
 }
